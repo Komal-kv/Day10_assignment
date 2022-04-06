@@ -15,3 +15,10 @@ echo "c+a/b:" $var3;
 
 var4=$((((a%b))+c));
 echo "a%b+c:" $var4;
+
+declare -a result
+
+result[0]=$var1;
+result[1]=$var2;
+result[2]=$var3;
+result[3]=$var4;
