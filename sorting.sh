@@ -22,3 +22,5 @@ result[0]=$var1;
 result[1]=$var2;
 result[2]=$var3;
 result[3]=$var4;
+
+echo "All the array elements:" ${result[@]}
