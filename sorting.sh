@@ -24,3 +24,10 @@ result[2]=$var3;
 result[3]=$var4;
 
 echo "All the array elements:" ${result[@]}
+
+for ((i=0;i<4;i++))
+do
+	array=`echo $array"\n"${result[i]} ": Index $i"`;
+done
+
+echo -e "sorting in ascending order:" $array | sort -n;
